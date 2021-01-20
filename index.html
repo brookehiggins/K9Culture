@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    </head>
+    <body>
+        <header>
+           <a href="index.html"><img class="img1" src="logo.PNG" alt="logo"></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Schedule</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="CTA"><button>Contact Me!</button></a>
+        </header>
+        <div class="hero">
+            <div class="hero-text">
+            <h2>Happy, Healthy, and Well Trained.</h2>
+            <br>
+            <button>Lets Work Together</button>
+            </div>
+        </div>
+        <div class="maintext">
+            <div>
+                <h3>Why Dog Training Is Important</h3>
+                <p>The more well behaved your dog is, the more places he or she can go. This leads to a greater quality of life for your furry friend.</p>
+            </div>
+            <div>
+                <h3>My Approach</h3>
+                <p>At K9Culture, I don't just train your dog. I will teach you the best way to communicate commands to your pet and ensure that they listen.</p>
+            </div>
+        </div>
+        <div style="background-color: rgba(0, 0, 0, 0.699);" class="maintext">
+            <canvas id="myChart" width="300" height="300"></canvas>
+            <div>
+                <p style="color: aliceblue; float: right;">67% of households in America own a pet. Only a staggering 4% get training for their dogs.</p>
+            </div>
+        </div>
+
+
+        <script>
+            var ctx = document.getElementById('myChart');
+
+            var stars = [67, 33];
+            var frameworks = ['67% Have a household Pet', '33% Do not have a household pet'];
+            
+            var myChart = new Chart(ctx, {
+             type: 'pie',
+             data: {
+                labels: frameworks,
+                datasets: [{
+                    label: 'Percent of households w/ dogs',
+                    data: stars,
+                    backgroundColor: [
+                        '#1985A1',
+                        '#854D27',
+                    ]
+                }]
+             },
+             options: {
+                 maintainAspectRatio: false,
+                 responsive: false,
+                 legend: {
+                    labels: {
+                        fontColor: "white",
+                    }
+                }
+             }
+            })
+        </script>
+    </body>
+</html>
+

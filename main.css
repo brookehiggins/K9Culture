@@ -1,0 +1,82 @@
+h1 {
+    color: rgb(230, 196, 43);
+    text-align: center;
+}
+body {
+    background-color: #337357;
+}
+
+header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #CFCABE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    color: ivory;
+}
+.nav_links li a:hover {
+    color: #854D27;
+}
+a {
+    text-decoration: none;
+}
+.img1 {
+    height: 50px;
+    width: 45%;
+}
+button {
+    padding: 9px 25px;
+    background-color: #337357;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+button:hover {
+    background-color: #854D27;
+}
+.mainpageimg {
+    width: 400px;
+    height: 60%;
+}
+.hero {
+    margin-top: 0px;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("june.jpg");
+}
+.hero-text {
+    float: right;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    padding-right: 120px;
+}
+.maintext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: #a8a8a8;
+    margin-top: 1px;
+}
+.maintext > div {
+    padding: 25px;
+}
