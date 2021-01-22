@@ -1,4 +1,4 @@
-h1 {
+.aboutme {
     color: rgb(230, 196, 43);
     text-align: center;
 }
@@ -49,7 +49,7 @@ button {
 button:hover {
     background-color: #854D27;
 }
-.mainpageimg {
+.jonnah {
     width: 400px;
     height: 60%;
 }

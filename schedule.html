@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <link rel="stylesheet" href="CalendarPicker.style.css" />
+<script src="CalendarPicker.js"></script>
+    </head>
+    <body>
+        <header>
+           <a href="index.html"><img class="img1" src="logo.PNG" alt="logo"></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Schedule</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="CTA"><button>Contact Me!</button></a>
+        </header>
+        <div class="hero">
+            <div class="hero-text">
+            <h2>Happy, Healthy, and Well Trained.</h2>
+            <br>
+            <button>Lets Work Together</button>
+            </div>
+        </div>
+        <div class="maintext">
+            <div>
+                <h3>Why Dog Training Is Important</h3>
+                <p>The more well behaved your dog is, the more places he or she can go. This leads to a greater quality of life for your furry friend.</p>
+            </div>
+            <div>
+                <h3>My Approach</h3>
+                <p>At K9Culture, I don't just train your dog. I will teach you the best way to communicate commands to your pet and ensure that they listen.</p>
+            </div>
+        </div>
+            <div id="myCalendarWrapper"></div>
+
+
+        <script>
+            const myCalender = new CalendarPicker('#myCalendarWrapper', {
+                // options here
+                myCalender.value,
+                myCalender.value.getDay(),
+          });
+          const nextYear = new Date().getFullYear() + 1;
+const myCalender = new CalendarPicker('#myCalendarWrapper', {
+      min: new Date(),
+      max: new Date(nextYear, 10) 
+});
+        </script>
+    </body>
+</html>
