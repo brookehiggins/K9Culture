@@ -3,7 +3,7 @@
     text-align: center;
 }
 body {
-    background-color: #337357;
+    background-color: white;
 }
 
 header {
@@ -74,9 +74,31 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     color: white;
-    background-color: #a8a8a8;
+    background-color: #854D27;
     margin-top: 1px;
 }
 .maintext > div {
     padding: 25px;
 }
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    margin-left: -38px;
+}
+li {
+    padding: 5px;
+}
+.footer {
+    background-color: white;
+    text-align: center;
+}
+.woof {
+    width: 49%;
+    height: 350px;
+}
+canvas{
+    margin: 0 auto;
+    }
